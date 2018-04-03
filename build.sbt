@@ -69,10 +69,10 @@ lazy val utest = crossProject(JSPlatform, JVMPlatform, NativePlatform)
     resolvers += Resolver.sonatypeRepo("snapshots")
   )
   .nativeSettings(
-    scalaVersion := "2.11.11",
-    crossScalaVersions := Seq("2.11.11"),
+    scalaVersion := "2.11.12",
+    crossScalaVersions := Seq("2.11.12"),
     libraryDependencies ++= Seq(
-      "org.scala-native" %%% "test-interface" % "0.3.0"
+      "org.scala-native" %%% "test-interface" % "0.3.7-SNAPSHOT"
     ),
     nativeLinkStubs := true
   )
